@@ -1,0 +1,122 @@
+%------------------------- AGGIUNTE --------------------------------------------
+\begin{itemize}
+    \item [] SOL. ESERCIZIO 1
+    \begin{lstlisting}{sol_ex1}
+#include <stdio.h> 
+  
+void fillArray(int *ptrVettore) { 
+    ptrVettore[0] = 10; 
+} 
+  
+int main() {
+    int vettore[100];  
+    fillArray(vettore); 
+    printf("%d", vettore[0]); 
+    return 0; 
+} 
+\end{lstlisting}
+
+    \item [] SOL. ESERCIZIO 5 
+\begin{lstlisting}{sol_ex5}  
+float *buildDoublePointerMatrix(float **arr, int nr, int nc) {
+    arr = (float *) malloc(nr * sizeof(float));
+    for (int i = 0; i < nr; i++) {
+        arr[i] = malloc(nc * sizeof(float));
+    }
+
+    int count = 0;
+    for (int i = 0; i < nr; i++) {
+        for (int j = 0; j < nc; j++) {
+            arr[i][j] = (float) count++/125;
+        }
+    }
+
+    return arr;
+}
+\end{lstlisting}
+    
+    \item [] SOL. ESERCIZIO 6 
+\begin{lstlisting}{sol_ex6}  
+struct cellula {
+    int numeroVicini;
+    int vivo;
+};
+
+struct cellula transizione(struct cellula c) {
+    if (c.vivo && (c.numeroVicini < 2 || c.numeroVicini > 3)) {
+        c.vivo = 0;
+    } 
+
+    return c;
+}
+\end{lstlisting}
+
+
+    \item [] SOL. ESERCIZIO 11 
+\begin{lstlisting}{sol_ex11}  
+#include <stdio.h>
+int main(void) {
+    char s[] = "stampa la stringa";
+    for (char *ptr = s; *ptr != '\0'; ++ptr) {
+        printf("%c", *ptr);
+    }
+}
+\end{lstlisting}
+
+\vspace{1.4cm}
+    \item [] SOL. ESERCIZIO 12 
+\begin{lstlisting}{sol_ex12}  
+struct Node* buildList(int k, struct Node* head) {
+    struct Node* tail = NULL; 
+    struct Node* tmp = NULL; 
+    int inputValue;
+
+    printf("Creazione linked list con %d elementi\n", k);
+
+    for (int i = 0; i < k; i++) {
+        printf("Inserisci l'elmento %d: ", i);
+        scanf("%d", &inputValue);
+
+        if (i == 0) {
+            head = (struct Node*) malloc(sizeof(struct Node)); 
+            head->data = inputValue;
+            head->next = NULL;
+            
+            tail = head;
+        } else {
+            tmp = (struct Node*) malloc(sizeof(struct Node)); 
+            tmp->data = inputValue;
+            tmp->next = NULL;
+
+            tail->next = tmp;
+            tail = tmp;
+        }
+    }
+
+    return head;
+}
+\end{lstlisting}
+
+    \item [] SOL. ESERCIZIO 15 
+\begin{lstlisting}{sol_ex15}  
+int elimina(int key, struct Node **radice){
+   while( (*radice != NULL) && ((*radice)->data < key)){
+      radice = &( (*radice)->next );
+   }
+   if ((*radice != NULL) && ((*radice)->data == key)){  
+      struct Node *next;
+      next=(*radice)->next;
+      free(*radice);
+      *radice=next;
+      return(1);
+   } else {
+      return(0);
+   }
+}
+\end{lstlisting}
+
+
+\end{itemize}
+
+
+

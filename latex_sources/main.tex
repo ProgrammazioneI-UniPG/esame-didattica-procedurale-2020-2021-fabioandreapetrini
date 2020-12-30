@@ -1,0 +1,59 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{latexsym}
+\usepackage{multicol}
+\usepackage{amssymb}
+
+% imposta i margini della pagina
+\textwidth 560.0 pt
+\textheight 710.0 pt
+\hoffset -85pt
+\voffset -60pt
+
+\renewcommand{\lstlistlistingname}{Elenco dei codici}
+\renewcommand{\lstlistingname}{Codice}
+
+\usepackage{inconsolata}
+
+\usepackage{color}
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+% configurazione codice sorgente
+\lstset{
+	language=C,
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	commentstyle=\color{pgreen},
+	keywordstyle=\color{pblue},
+	stringstyle=\color{pred},
+% 	basicstyle=\ttfamily,
+	tabsize=2,
+% 	float=H,
+	numbers=left,
+    stepnumber=1,
+	basicstyle=\footnotesize,
+	moredelim=[il][\textcolor{pgrey}]{},
+	moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+\begin{document}
+    \include{copertina}
+    \newpage
+    \pagenumbering{arabic}
+    \include{esercizi}
+    \include{soluzioni_esercizi}
+\end{document}
