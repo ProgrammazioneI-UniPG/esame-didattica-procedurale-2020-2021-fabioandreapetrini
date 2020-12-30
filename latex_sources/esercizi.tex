@@ -431,7 +431,7 @@ riga 5: il risultato dell'espressione condizionale viene convertito in long int 
 \item \fbox{facile} Il risultato della divisione è 5.200? Motivare la risposta e, in caso negativo, descrivere l’eventuale correzione.
 
 \begin{minipage}{.45\textwidth}
-\begin{lstlisting}{code_ex12}
+\begin{lstlisting}{code_ex14}
 #include <stdio.h>
 int main(void) {
     int a = 5, b = 2;
@@ -457,7 +457,7 @@ Per ottenere il risultato desiderato, è necessario applicare la conversione for
 Implementare una funzione \emph{int elimina(int key, struct Node **radice);} che elimini l'elemento avente chiave key. Se quest'ultimo è presente, dovrà deallocarlo e restituire 1. Se non presente, la funzione dovrà restituire 0.
 
 \begin{minipage}{.45\textwidth}
-\begin{lstlisting}{code_ex12}
+\begin{lstlisting}{code_ex15}
 struct Node { 
     int data; 
     struct Node* next; 
