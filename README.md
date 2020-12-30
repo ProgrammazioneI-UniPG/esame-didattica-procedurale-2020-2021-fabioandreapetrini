@@ -8,10 +8,10 @@ Eaborato con gli esercizi per l'esame orale di Programmazione Procedurale con La
 
 Le seguenti caratteristiche rispettano le specifiche trasmesse nella lezione del 13/10/2020.
 
-* Un otale di 15 esercizi suddivisi per difficoltà: 5 facili, 5 medi e 5 difficili;
+* Un totale di 15 esercizi suddivisi per difficoltà: 5 facili, 5 medi e 5 difficili;
 * simili a quelli dello scritto ma con delle varianti:
     * copiabili e incollabili nella chat di teams, quindi più “semplici” rispetto ad un compito scritto tradizionale; 
-    * esercizi di ragionamento: quindi non domande tipo “quali sono i cicli in C?”; 
+    * esercizi di ragionamento: quindi non domande tipo “quali sono i cicli in C?” ma simil-scritto; 
     * coprire più possibile il programma: sono stati svolti molti più dei tre argomenti minimi del programma.
 * Gli esercizi si basano, di norma, sul frammento di codice sotto riportato.
 
