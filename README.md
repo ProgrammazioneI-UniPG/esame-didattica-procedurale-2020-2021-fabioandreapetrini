@@ -12,7 +12,7 @@ Le seguenti caratteristiche rispettano le specifiche trasmesse nella lezione del
 * simili a quelli dello scritto ma con delle varianti:
     * copiabili e incollabili nella chat di teams, quindi più “semplici” rispetto ad un compito scritto tradizionale; 
     * esercizi di ragionamento: quindi non domande tipo “quali sono i cicli in C?” ma simil-scritto; 
-    * coprire più possibile il programma: sono stati svolti molti più dei tre argomenti minimi del programma.
+    * coprire più possibile il programma: almeno tre argomenti.
 * Gli esercizi si basano, di norma, sul frammento di codice sotto riportato.
 
 ## Elaborato PDF scritto in LaTex
